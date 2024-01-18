@@ -3,15 +3,18 @@ Test plotting of the dataset
 """
 import unittest
 import pandas as pd
-from unittest.mock import patch # found on the internet
+from unittest.mock import patch  # found on the internet
 from scripts.script import plot_data
 
 class TestPlotting(unittest.TestCase):
-
+    """
+    Class to test the plotting
+    """
     def setUp(self):
         """
         Create a sample DataFrame for testing
         """
+
         data = {
             "x_data": [1, 2, 3],
             "y_data": [4, 5, 6],
